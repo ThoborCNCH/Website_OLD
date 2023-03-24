@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&family=Karla:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import "./variabiles";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  text-decoration: none;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+div time,
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+p {
+  text-indent: 30px;
+}
+a,
+h5,
+h6,
+span {
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+h3,
+h4 {
+  font-weight: 600;
+  font-family: $font_anek;
+}
+
+html,
+body {
+  scroll-behavior: auto;
+  background: $black2;
+  overflow-x: hidden;
+}
+
+.header {
+  padding-top: 70px;
+  width: 100vw !important ;
+  position: relative;
+  top: 0;
+  height: auto;
+  left: 0;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+@import "./scrollbar";
+@import "./navbar";
+@import "./button";
+@import "./up";
+@import "./anim";
+@import "./contact";
+@import "./footer";
